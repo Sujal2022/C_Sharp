@@ -1,0 +1,118 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // 1 Write a c# program to find the whether the number is positive or negative.
+
+            //Console.WriteLine("");
+            //Console.WriteLine("enter number:");
+            //int no = Convert.ToInt32(Console.ReadLine());
+
+            //if (no > 0)
+            //{
+            //    Console.WriteLine(no + " is positive number");
+            //}
+            //else
+            //{
+            //    Console.WriteLine(no + " is negative number");
+            //}
+
+            //2 Write a c# program to find the number is even or odd.
+
+            //Console.WriteLine("Enter Number:");
+            //int no = Convert.ToInt32(Console.ReadLine());
+
+            //if (no % 2 == 0)
+            //{
+            //    Console.WriteLine(no + " is Even Number");
+            //}
+            //else
+            //{
+            //    Console.WriteLine(no + " is Odd Number");
+            //}
+
+            //3 write a c# program to find area of circle.
+
+            //Console.WriteLine("Enter Area of Circle:");
+            //Double r = Convert.ToDouble(Console.ReadLine());
+
+            //double area = 3.14 * r * r;
+
+            //Console.WriteLine("Area of Circle is:" + area);
+
+            //4 write a c# program to find area of squre.
+            //Console.WriteLine("Enter a value:");
+            //Double a = Convert.ToDouble(Console.ReadLine());
+
+            //double ans = a * a;
+
+            //Console.WriteLine("Area of Square is " + ans);
+
+            //5 write a c# program to print Fibonacci series.
+
+            //Console.WriteLine("Enter Number:");
+            //int n = Convert.ToInt32(Console.ReadLine());
+
+            //int a = 0, b = 1;
+
+            //if (n == 0)
+            //    Console.WriteLine("Invalid Choice");
+            //else if (n == 1)
+            //    Console.WriteLine(a);
+            //else
+            //    Console.Write(a + " " + b);
+
+            //for (int i = 3; i <= n; i++)
+            //{
+            //    int s = a + b;
+            //    Console.Write(" " + s);
+            //    a = b;
+            //    b = s;
+            //}
+
+
+            //// Millimeter to Centimeter Conversion
+            //Console.Write("Enter value in millimeters: ");
+            //double millimeters = Convert.ToDouble(Console.ReadLine());
+            //double centimeters = millimeters / 10;
+            //Console.WriteLine($"{millimeters} mm = {centimeters} cm");
+
+            //// Meter to Kilometer Conversion
+            //Console.Write("Enter value in meters: ");
+            //double meters = Convert.ToDouble(Console.ReadLine());
+            //double kilometers = meters / 1000;
+            //Console.WriteLine($"{meters} m = {kilometers} km");
+
+
+            //1.Three Subject Marks Total and Average:-
+
+            Console.WriteLine("enter c program marks:");
+            int m1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter java program marks:");
+            int m2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter flutter program marks:");
+            int m3 = Convert.ToInt32(Console.ReadLine());
+            //console.readline();
+
+            int total = m1 + m2 + m3;
+            Console.WriteLine("total marks is:" + total);
+
+            int avg = total / 3;
+            Console.WriteLine("total average is:" + avg);
+
+            double percentage = (total / 300) * 100;
+            Console.WriteLine("total percentage is:" + avg);
+
+            Console.ReadLine();
+
+        }
+    }
+}

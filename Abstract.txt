@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace @abstract
+{
+    abstract class testing1
+    {
+        public abstract void test();
+    }
+    class testing2 : testing1
+    {
+        public override void test()
+        {
+            Console.WriteLine("hello");
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            testing2 t2 = new testing2();
+            t2.test();
+            Console.ReadLine();
+        }
+    }
+}

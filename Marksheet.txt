@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Marksheet
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter marks for Subject 1: ");
+            int sub1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter marks for Subject 2: ");
+            int sub2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter marks for Subject 3: ");
+            int sub3 = Convert.ToInt32(Console.ReadLine());
+
+            int total = sub1 + sub2 + sub3;
+            double average = total / 3.0;
+
+            Console.WriteLine("\n--- Mark Sheet ---");
+            Console.WriteLine($"Subject 1: " +sub1);
+            Console.WriteLine($"Subject 2: " +sub2);
+            Console.WriteLine($"Subject 3: " +sub3);
+            Console.WriteLine($"Total Marks: " + total);
+            Console.WriteLine($"Average Marks: "+average);
+
+            if (average >= 90)
+                Console.WriteLine("Grade: A+");
+            else if (average >= 80)
+                Console.WriteLine("Grade: A");
+            else if (average >= 70)
+                Console.WriteLine("Grade: B");
+            else if (average >= 60)
+                Console.WriteLine("Grade: C");
+            else if (average >= 50)
+                Console.WriteLine("Grade: D");
+            else
+                Console.WriteLine("Grade: F");
+
+            Console.ReadLine();
+        }
+    }
+}

@@ -1,0 +1,98 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BasicProgram
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //1.Three Subject Marks Total and Average:-
+
+            Console.WriteLine("enter c program marks:");
+            int m1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter java program marks:");
+            int m2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter flutter program marks:");
+            int m3 = Convert.ToInt32(Console.ReadLine());
+            //console.readline();
+
+            int total = m1 + m2 + m3;
+            Console.WriteLine("total marks is:" + total);
+
+            int avg = total / 3;
+            Console.WriteLine("total average is:" + avg);
+
+            double percentage = (total / 300) * 100;
+            Console.WriteLine("total percentage is:" + avg);
+
+            //2.Check Whether Number is Odd or Even:-
+
+            //Console.WriteLine("Enter Number:");
+            //int no = Convert.ToInt32(Console.ReadLine());
+
+            //if(no%2==0)
+            //{
+            //    Console.WriteLine(no+ " is Even Number");
+            //}
+            //else
+            //{
+            //    Console.WriteLine(no + " is Odd Number");
+            //}
+
+            //3.Check Whether Number is Positive or Negative:-
+
+            //Console.WriteLine("Enter Number:");
+            //int no = Convert.ToInt32(Console.ReadLine());
+
+            //if (no>0)
+            //{
+            //    Console.WriteLine(no + " is Positive Number");
+            //}
+            //else
+            //{
+            //    Console.WriteLine(no + " is Negative Number");
+            //}
+
+            //4.Switch Case 
+
+            //Console.WriteLine("Enter Number(1-7):");
+            //int no = Convert.ToInt32(Console.ReadLine());
+
+            //switch (no)
+            //{
+            //    case 1:
+            //        Console.WriteLine("Monday");
+            //        break;
+            //    case 2:
+            //        Console.WriteLine("Tuesday");
+            //        break;
+            //    case 3:
+            //        Console.WriteLine("Wednesday");
+            //        break;
+            //    case 4:
+            //        Console.WriteLine("Thursday");
+            //        break;
+            //    case 5:
+            //        Console.WriteLine("Friday");
+            //        break;
+            //    case 6:
+            //        Console.WriteLine("Saturday");
+            //        break;
+            //    case 7:
+            //        Console.WriteLine("Sunday");
+            //        break;
+            //    default:
+            //        Console.WriteLine("InValid Choice! Please Enter From 1-7");
+            //        break;
+            //}
+
+
+            Console.ReadLine();
+
+        }
+    }
+}

@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace parameterSum
+{
+    internal class Program
+    {
+        class test
+        {
+            public int a, c;
+            public void get()
+            {
+                Console.Write("Enter Number for table : ");
+                a = Convert.ToInt32(Console.ReadLine());
+
+            }
+            public void sum()
+            {
+                for (int i = 1; i < 11; i++)
+                {
+                    c = a * i;
+                    Console.WriteLine(a + " * " + i + " = " + c);
+                }
+            }
+        }
+        static void Main(string[] args)
+        {
+            test t = new test();
+            t.get();
+            t.sum();
+            Console.ReadLine();
+        }
+    }
+}

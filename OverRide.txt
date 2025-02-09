@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace overide
+{
+    class Program
+    {
+        public class abc
+        {
+            public virtual void Display()
+            {
+
+            }
+        }
+        public class test : abc
+        {
+            public override void Display()
+            {
+                Console.WriteLine("test method display");
+            }
+        }
+        public class test2 : abc
+        {
+            public override void Display()
+            {
+                Console.WriteLine("test2 method dispaly");
+            }
+        }
+        static void Main(string[] args)
+        {
+            test2 t = new test2();
+            t.Display();
+            Console.ReadLine();
+
+        }
+    }
+}

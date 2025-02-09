@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CheckDigits
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter a string: ");
+            string input = Console.ReadLine();
+
+            bool isDigits = true;
+            foreach (char c in input)
+            {
+                if (!char.IsDigit(c))
+                {
+                    isDigits = false;
+                    break;
+                }
+            }
+
+            if (isDigits)
+                Console.WriteLine("The string contains only digits.");
+            else
+                Console.WriteLine("The string does not contain only digits.");
+            Console.ReadLine();
+        }
+    }
+}
